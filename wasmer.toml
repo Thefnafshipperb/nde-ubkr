@@ -6,6 +6,14 @@ description = "Node Unblocker running on Wasmer Edge"
 [[modules]]
 name = "server"
 source = "."
-preset = "nodejs" 
+preset = "nodejs"
 
+[command]
+name = "script"
+module = "server"
+runner = "https://webc.org"
+
+[[deploy]]
+name = "your-app-name"
+entrypoint = "app.js" 
 
