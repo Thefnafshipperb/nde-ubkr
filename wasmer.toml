@@ -1,0 +1,7 @@
+[package]
+name = "your-username/node-unblocker"
+version = "0.1.0"
+description = "Node Unblocker on Wasmer Edge"
+
+[dependencies]
+# Ensures Node.js / Edge.js runtime support
