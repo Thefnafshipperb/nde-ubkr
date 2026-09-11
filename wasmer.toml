@@ -3,5 +3,8 @@ name = "your-username/node-unblocker"
 version = "0.1.0"
 description = "Node Unblocker on Wasmer Edge"
 
-[dependencies]
+[[modules]]
+name = "server"
+source = "."
+preset = "nodejs" # Tells Wasmer to treat this as a Node app
 
