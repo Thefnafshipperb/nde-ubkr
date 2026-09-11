@@ -1,0 +1,18 @@
+[package]
+name = "your-username/node-unblocker"
+version = "0.1.0"
+description = "Node Unblocker running on Wasmer Edge"
+
+[[modules]]
+name = "server"
+source = "."
+preset = "edge-js"
+
+[command]
+name = "script"
+module = "server"
+runner = "https://webc.org"
+
+[[deploy]]
+name = "your-app-name"
+entrypoint = "app.js"
